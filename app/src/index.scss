@@ -1,10 +1,30 @@
-body {
-  margin: 0;
+@use 'sass:map';
+
+$colors: (
+  "dark-3": #10002B,
+  "dark-2": #240046,
+  "dark-1": #3C096C,
+  "base": #5A189A,
+  "light-1": #9D4EDD,
+  "light-2": #C77DFF,
+  "light-3": #E0AAFF,
+  "accent": #70BF2C
+);
+
+@function color($key){
+  @return map.get($colors, $key);
+}
+
+html, body, * {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 code {

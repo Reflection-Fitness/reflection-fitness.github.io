@@ -1,14 +1,17 @@
+import { Route, Switch } from 'react-router-dom';
 import './App.scss';
+import { DevWarning } from './components/DevWarning/DevWarning';
+import { HomePage } from './pages/PageNotFound/HomePage/HomePage';
+import { PageNotFound } from './pages/PageNotFound/PageNotFound';
 
 function App() {
   return (
     <div>
-      <h1>Hello User!</h1>
-      <p>
-        Sorry! This website is currently under construction.
-        Please check back shortly. Until then, please contact info@reflectionfitness.net for any inquiries.
-        Thank you for your patience.
-      </p>
+      <DevWarning />
+      <Switch>
+        <Route exact path='/' component={HomePage}/>
+        <Route component={PageNotFound}/>
+      </Switch>
     </div>
   );
 }
