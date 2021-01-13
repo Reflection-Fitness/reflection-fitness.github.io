@@ -1,0 +1,21 @@
+@import './index.scss';
+
+// general styling for application
+
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    margin: 0;
+    box-sizing: border-box;
+  
+    color: color("light-5");
+  }
+  
+  html {
+    body {
+      overflow-x: hidden;
+      background-color: color("dark-4");
+    }
+  }

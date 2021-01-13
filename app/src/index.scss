@@ -1,13 +1,14 @@
 @use 'sass:map';
 
+// constants and access functions
 $textSizes: (
-  "medium": 1.875vw, // 1.875vw - calculated
+  "medium": 1.875vw, 
   "small": 1.250vw,
   "tiny": 0.938vw
 );
 
 @function textSize($key){
-  @return map.get($breakpoints, $key);
+  @return map.get($textSizes, $key);
 }
 
 $breakpoints: (
@@ -33,22 +34,4 @@ $colors: (
 
 @function color($key){
   @return map.get($colors, $key);
-}
-
-* {
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
-  margin: 0;
-  box-sizing: border-box;
-
-  color: color("light-5");
-}
-
-html {
-  body {
-    overflow-x: hidden;
-    background-color: color("dark-4");
-  }
 }

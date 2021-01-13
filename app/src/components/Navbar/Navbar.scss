@@ -1,113 +1,115 @@
 @import '../../index.scss';
 
-.link {
-    text-decoration: none;
-    color: color("light-5");
-    font-size: textSize("medium");
-    font-weight: 100;
-
-    &.curr {
-        font-weight: 300;
-    }
-}
-
-.navbar {
-    color: color("light-5");
-
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-
+.nav.container {
     position: absolute;
     z-index: 2;
-
     width: 100%;
-    height: 5rem;
-
-    .logoHead {
+    .navbar {
+        color: color("light-5");
+    
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        justify-content: flex-start;
-
-        img {
-            object-fit: contain;
-            height: 3rem;
-            padding: 0 1rem;
-        }
-    }
-
-    .links {
-        padding: 0;
+        justify-content: space-between;
+    
+        width: 100%;
+        height: 5rem;
         
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        list-style-type: none;
-
         .link {
-            padding: 2rem;
-            display: block;
+            text-decoration: none;
+            color: color("light-5");
+            font-size: textSize("medium");
+            font-weight: 100;
+        
+            &.curr {
+                font-weight: 300;
+            }
         }
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    @media screen and (max-width: breakpoint("phone")) {
-        background-color: color("dark-3");
-        flex-flow: column nowrap;
-        justify-content: center;
-
-        height: auto;
 
         .logoHead {
-            align-self: flex-start;
-            height: 5rem;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: flex-start;
+    
+            img {
+                object-fit: contain;
+                height: 3rem;
+                padding: 0 1rem;
+            }
         }
+    
+        .links {
+            padding: 0;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            list-style-type: none;
+    
+            .link {
+                padding: 2rem;
+                display: block;
+            }
+        }
+    
+        .hamburger {
+            display: none;
+        }
+    
+        @media screen and (max-width: breakpoint("phone")) {
+            background-color: color("dark-3");
+            flex-flow: column nowrap;
+            justify-content: center;
+    
+            height: auto;
+    
+            .logoHead {
+                align-self: flex-start;
+                height: 5rem;
+            }
+            
+            &.open {
+                .links {
+                    flex-flow: column nowrap;
         
-        &.open {
-            .links {
-                flex-flow: column nowrap;
-    
-                width: 100%;
-    
-                .link {
                     width: 100%;
-                    padding: 1rem 5rem;
-    
-                    background-color: color("dark-3");
-                    color: color("light-4");
-                    transition: all 0.3s ease-in-out 0s;
-                    
-                    &:hover {
-                        background-color: color("dark-2");
+        
+                    .link {
+                        width: 100%;
+                        padding: 1rem 5rem;
+        
+                        background-color: color("dark-3");
+                        color: color("light-4");
+                        transition: all 0.3s ease-in-out 0s;
+                        
+                        &:hover {
+                            background-color: color("dark-2");
+                        }
                     }
                 }
             }
-        }
-
-        &.closed {
-            .links {
-                display: none;
-            }
-        }
-
-        .hamburger {
-            position: absolute;
-            top: 1.6rem;
-            right: 1rem;
-
-            display: block;
-            list-style-type: none;
     
-            li {
-                width: 30px;
-                height: 1px;
-                background: white;
-                margin: 6px;
+            &.closed {
+                .links {
+                    display: none;
+                }
+            }
+    
+            .hamburger {
+                position: absolute;
+                top: 1.6rem;
+                right: 1rem;
+    
+                display: block;
+                list-style-type: none;
+        
+                li {
+                    width: 30px;
+                    height: 1px;
+                    background: white;
+                    margin: 6px;
+                }
             }
         }
     }

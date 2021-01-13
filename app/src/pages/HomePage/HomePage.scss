@@ -7,8 +7,8 @@
         position: fixed;
         z-index: -1;
 
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         object-fit: cover;
     }
     
@@ -32,6 +32,68 @@
             width: 100px;
             object-fit: cover;
             margin-bottom: 2rem;
+        }
+    }
+
+    .mission {
+        width: 100%;
+        min-height: 100vh;
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+
+        .lead-in {
+            align-self: flex-start;
+            font-size: textSize("medium");
+            font-weight: 300;
+            margin-left: 3rem;
+        }
+
+        .card-row {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            justify-content: center;
+
+            .card {
+                background-color: color("dark-3");
+                
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+
+                padding: 1rem;
+                margin: 1rem;
+                
+                img {
+                    margin: auto 1rem;
+                    object-fit: contain;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    margin-top: auto;
+                    font-size: textSize("small");
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .hook {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+
+            .txt {
+                text-align: center;
+                font-size: textSize("medium");
+                font-weight: 300;
+                margin: 1rem;
+            }
+            
         }
     }
 }
