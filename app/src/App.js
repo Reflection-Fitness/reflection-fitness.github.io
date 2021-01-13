@@ -10,7 +10,7 @@ import { ServicesPage } from './pages/ServicesPage/ServicesPage';
 function App() {
   return (
     <div>
-      <DevWarning />
+      {/* <DevWarning /> */}
       <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route exact path='/about' component={AboutPage}/>

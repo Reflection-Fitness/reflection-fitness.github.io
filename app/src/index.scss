@@ -1,7 +1,7 @@
 @use 'sass:map';
 
 $textSizes: (
-  "medium": 1.875vw,
+  "medium": 1.875vw, // 1.875vw - calculated
   "small": 1.250vw,
   "tiny": 0.938vw
 );
@@ -35,18 +35,20 @@ $colors: (
   @return map.get($colors, $key);
 }
 
-
-
-html, body, * {
+* {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
   margin: 0;
   box-sizing: border-box;
+
+  color: color("light-5");
 }
 
-html, body {
-  overflow: hidden;
-  background-color: color("dark-4");
+html {
+  body {
+    overflow-x: hidden;
+    background-color: color("dark-4");
+  }
 }

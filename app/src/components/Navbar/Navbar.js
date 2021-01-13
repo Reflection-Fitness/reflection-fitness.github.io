@@ -15,7 +15,7 @@ export function Navbar({curr}) {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className={"container " + (open ? "open" : "closed")}>
+        <div className={"navbar " + (open ? "open" : "closed")}>
             <div className="logoHead">
                 <img src={logo} alt="Logo" />
                 <NavLink curr={curr} name="Reflection Fitness" link="/" />
