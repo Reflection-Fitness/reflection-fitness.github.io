@@ -1,25 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.640a5ba9.chunk.css",
-    "main.js": "/static/js/main.31fd178e.chunk.js",
-    "main.js.map": "/static/js/main.31fd178e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.29cb1ebe.js",
-    "runtime-main.js.map": "/static/js/runtime-main.29cb1ebe.js.map",
-    "static/js/2.d414e3c9.chunk.js": "/static/js/2.d414e3c9.chunk.js",
-    "static/js/2.d414e3c9.chunk.js.map": "/static/js/2.d414e3c9.chunk.js.map",
-    "static/js/3.8d2eeaac.chunk.js": "/static/js/3.8d2eeaac.chunk.js",
-    "static/js/3.8d2eeaac.chunk.js.map": "/static/js/3.8d2eeaac.chunk.js.map",
+    "main.css": "/static/css/main.32cd4c15.chunk.css",
+    "main.js": "/static/js/main.9baddf67.chunk.js",
+    "main.js.map": "/static/js/main.9baddf67.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fbde013e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fbde013e.js.map",
+    "static/js/2.008dd703.chunk.js": "/static/js/2.008dd703.chunk.js",
+    "static/js/2.008dd703.chunk.js.map": "/static/js/2.008dd703.chunk.js.map",
+    "static/js/3.bb5e4259.chunk.js": "/static/js/3.bb5e4259.chunk.js",
+    "static/js/3.bb5e4259.chunk.js.map": "/static/js/3.bb5e4259.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.640a5ba9.chunk.css.map": "/static/css/main.640a5ba9.chunk.css.map",
-    "static/js/2.d414e3c9.chunk.js.LICENSE.txt": "/static/js/2.d414e3c9.chunk.js.LICENSE.txt",
+    "static/css/main.32cd4c15.chunk.css.map": "/static/css/main.32cd4c15.chunk.css.map",
+    "static/js/2.008dd703.chunk.js.LICENSE.txt": "/static/js/2.008dd703.chunk.js.LICENSE.txt",
+    "static/media/GreenArrow.2fb54d78.svg": "/static/media/GreenArrow.2fb54d78.svg",
     "static/media/Home.cd0744bf.png": "/static/media/Home.cd0744bf.png",
     "static/media/WhiteScrollArrow.7690fc99.svg": "/static/media/WhiteScrollArrow.7690fc99.svg",
-    "static/media/logo.d658372f.svg": "/static/media/logo.d658372f.svg"
+    "static/media/abort.14cdfe4b.svg": "/static/media/abort.14cdfe4b.svg",
+    "static/media/arm-muscles.a9facd69.svg": "/static/media/arm-muscles.a9facd69.svg",
+    "static/media/checkmark.dbb2d01c.svg": "/static/media/checkmark.dbb2d01c.svg",
+    "static/media/fitness.1c7833bf.svg": "/static/media/fitness.1c7833bf.svg",
+    "static/media/heart-care.ee764f59.svg": "/static/media/heart-care.ee764f59.svg",
+    "static/media/logo.d658372f.svg": "/static/media/logo.d658372f.svg",
+    "static/media/math-plus.80c531bc.svg": "/static/media/math-plus.80c531bc.svg",
+    "static/media/slow.290a341c.svg": "/static/media/slow.290a341c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.29cb1ebe.js",
-    "static/js/2.d414e3c9.chunk.js",
-    "static/css/main.640a5ba9.chunk.css",
-    "static/js/main.31fd178e.chunk.js"
+    "static/js/runtime-main.fbde013e.js",
+    "static/js/2.008dd703.chunk.js",
+    "static/css/main.32cd4c15.chunk.css",
+    "static/js/main.9baddf67.chunk.js"
   ]
 }
