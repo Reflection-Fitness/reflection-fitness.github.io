@@ -1,8 +1,22 @@
 @use 'sass:map';
 
+$textSizes: (
+  "medium": 1.875vw,
+  "small": 1.250vw,
+  "tiny": 0.938vw
+);
+
+@function textSize($key){
+  @return map.get($breakpoints, $key);
+}
+
 $breakpoints: (
   "phone": 568px,
 );
+
+@function breakpoint($key){
+  @return map.get($breakpoints, $key);
+}
 
 $colors: (
   "dark-4": #10002B,
@@ -21,14 +35,10 @@ $colors: (
   @return map.get($colors, $key);
 }
 
-@function breakpoint($key){
-  @return map.get($breakpoints, $key);
-}
+
 
 html, body, * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
@@ -39,9 +49,4 @@ html, body, * {
 html, body {
   overflow: hidden;
   background-color: color("dark-4");
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

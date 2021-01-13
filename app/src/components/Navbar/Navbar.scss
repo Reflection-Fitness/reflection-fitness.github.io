@@ -1,5 +1,16 @@
 @import '../../index.scss';
 
+.link {
+    text-decoration: none;
+    color: color("light-5");
+    font-size: textSize("medium");
+    font-weight: 100;
+
+    &.curr {
+        font-weight: 300;
+    }
+}
+
 .container {
     color: color("light-5");
 
@@ -36,8 +47,6 @@
         .link {
             padding: 2rem;
             display: block;
-            text-decoration: none;
-            color: color("light-5");
         }
     }
 

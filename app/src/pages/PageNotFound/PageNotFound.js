@@ -1,7 +1,8 @@
+import { Navbar } from '../../components/Navbar/Navbar';
 import './PageNotFound.scss'
 export function PageNotFound() {
     return (
-        <p>Page Not Found</p>
+        <Navbar curr="PageNotFound"/>
     );
     
 }

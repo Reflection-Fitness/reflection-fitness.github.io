@@ -3,20 +3,22 @@ import logo from '../../assets/logo.svg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-function NavLink({ name, link }) {
+function NavLink({ curr, name, link }) {
     return (
-        <Link to={link} className="link">{name}</Link>
+        <Link to={link} className={"link " + (curr===name? "curr" : "")}>
+            {name}
+        </Link>
     );
 }
 
-export function Navbar() {
+export function Navbar({curr}) {
     const [open, setOpen] = useState(false)
 
     return (
         <div className={"container " + (open ? "open" : "closed")}>
             <div className="logoHead">
                 <img src={logo} alt="Logo" />
-                <p>Reflection Fitness</p>
+                <NavLink curr={curr} name="Reflection Fitness" link="/" />
             </div>
 
             <ul className="hamburger" onClick={() => setOpen(!open)}>
@@ -26,9 +28,9 @@ export function Navbar() {
             </ul>
 
             <ul className="links">
-                <NavLink name="About" link="/about" />
-                <NavLink name="Services" link="/services" />
-                <NavLink name="Contact" link="/contact" />
+                <NavLink curr={curr} name="About" link="/about" />
+                <NavLink curr={curr} name="Services" link="/services" />
+                <NavLink curr={curr} name="Contact" link="/contact" />
             </ul>
         </div>
     );
