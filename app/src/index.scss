@@ -1,18 +1,28 @@
 @use 'sass:map';
 
+$breakpoints: (
+  "phone": 568px,
+);
+
 $colors: (
-  "dark-3": #10002B,
-  "dark-2": #240046,
-  "dark-1": #3C096C,
-  "base": #5A189A,
-  "light-1": #9D4EDD,
-  "light-2": #C77DFF,
-  "light-3": #E0AAFF,
+  "dark-4": #10002B,
+  "dark-3": #240046,
+  "dark-2": #3C096C,
+  "dark-1": #5A189A,
+  "light-1": #7B2CBF,
+  "light-2": #9D4EDD,
+  "light-3": #C77DFF,
+  "light-4": #E0AAFF,
+  "light-5": #f8ebff,
   "accent": #70BF2C
 );
 
 @function color($key){
   @return map.get($colors, $key);
+}
+
+@function breakpoint($key){
+  @return map.get($breakpoints, $key);
 }
 
 html, body, * {
@@ -24,7 +34,11 @@ html, body, * {
   
   margin: 0;
   box-sizing: border-box;
+}
+
+html, body {
   overflow: hidden;
+  background-color: color("dark-4");
 }
 
 code {

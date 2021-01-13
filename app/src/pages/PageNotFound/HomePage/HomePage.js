@@ -1,7 +1,12 @@
+import { Navbar } from '../../../components/Navbar/Navbar';
 import './HomePage.scss'
 
-export function HomePage(){
+export function HomePage() {
     return (
-        <p>Home Page</p>
+        <div>
+            <Navbar />
+            <h1>Home Page</h1>
+            <h1>Home Page</h1>
+        </div>
     );
 }
