@@ -38,7 +38,7 @@ export function HomePage() {
                     <img src={arrow} alt="arrow" />
                 </div>
                 <div className="mission">
-                    <p className="lead-in">Out mission is to...</p>
+                    <p className="lead-in">Our mission is to...</p>
                     <div className="card-row">
                         <Card txt="help people" icon={helpIcon} />
                         <Card txt="build strength" icon={strengthIcon} />

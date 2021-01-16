@@ -2,7 +2,6 @@ import './Navbar.scss';
 import logo from '../../assets/logo.svg';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { DevWarning } from '../DevWarning/DevWarning';
 
 function NavLink({ curr, name, link }) {
     return (
@@ -17,7 +16,6 @@ export function Navbar({curr}) {
 
     return (
         <div className="nav container">
-            <DevWarning/>
             <div className={"navbar " + (open ? "open" : "closed")}>
                 <div className="logoHead">
                     <img src={logo} alt="Logo" />

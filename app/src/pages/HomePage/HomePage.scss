@@ -13,25 +13,29 @@
     }
     
     .hero {
+        position: relative;
         width: 100%;
         height: 100vh;
         
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         text-align: center;
+        padding: 0 1rem;
+
         p {
-            margin-top: 48vh;
+            // margin-top: 48vh;
             font-size: textSize("medium");
             font-weight: 400;
         }
 
         img {
+            position: absolute;
+            bottom: 1rem;
             width: 100px;
             object-fit: cover;
-            margin-bottom: 2rem;
         }
     }
 
@@ -48,7 +52,7 @@
             align-self: flex-start;
             font-size: textSize("medium");
             font-weight: 300;
-            margin-left: 3rem;
+            margin: 3rem 0 0rem 3rem;
         }
 
         .card-row {
@@ -56,6 +60,7 @@
             flex-flow: row wrap;
             align-content: space-between;
             justify-content: center;
+            margin: 3rem 1rem;
 
             .card {
                 background-color: color("dark-3");
@@ -86,14 +91,26 @@
             flex-flow: column nowrap;
             align-items: center;
             justify-content: center;
+            margin: 1rem 2rem;
 
             .txt {
                 text-align: center;
                 font-size: textSize("medium");
                 font-weight: 300;
-                margin: 1rem;
+                margin: 1rem 1rem 3rem 1rem;
             }
             
+        }
+    }
+
+    @media (max-width: breakpoint("phone-L")) {
+        .mission {
+            .lead-in {
+                margin: 3rem auto 0 auto;
+            }
+            .card-row {
+                flex-flow: column nowrap;
+            }
         }
     }
 }

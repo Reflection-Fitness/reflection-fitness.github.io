@@ -5,6 +5,7 @@
     z-index: 2;
     width: 100%;
     .navbar {
+        position: relative;
         color: color("light-5");
     
         display: flex;
@@ -18,7 +19,7 @@
         .link {
             text-decoration: none;
             color: color("light-5");
-            font-size: textSize("medium");
+            font-size: textSize("small");
             font-weight: 100;
         
             &.curr {
@@ -57,7 +58,7 @@
             display: none;
         }
     
-        @media screen and (max-width: breakpoint("phone")) {
+        @media screen and (max-width: breakpoint("tablet")) {
             background-color: color("dark-3");
             flex-flow: column nowrap;
             justify-content: center;

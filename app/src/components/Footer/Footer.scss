@@ -6,6 +6,8 @@
     flex-flow: column nowrap;
     align-items: center;
 
+    margin-top: 3rem;
+
     .main {
         min-height: 50vh;
 
@@ -21,6 +23,7 @@
             justify-content: center;
     
             text-align: center;
+            padding: 2rem 0;
     
             h1 {
                 font-size: textSize("medium");
@@ -47,12 +50,11 @@
             font-size: textSize("small");
 
             * {
-                padding: 1rem 2rem;
+                margin: 1rem 2rem;
             }
 
             p {
                 font-weight: 300;
-                
             }
 
             .link {
@@ -74,7 +76,7 @@
     .dev-creds {
         height: 100%;
         width: 100%;
-        padding: 1.5rem 3rem;
+        margin: 1.5rem 3rem;
 
         display: flex;
         flex-flow: row nowrap;
@@ -84,6 +86,31 @@
         p {
             font-size: textSize("tiny");
             font-weight: 100;
+        }
+    }
+    
+    @media (max-width: breakpoint("tablet")) {
+        .main {
+            .nav {
+                flex-flow: column nowrap;
+                margin: 1rem 0 1.5rem 0;
+                * {
+                    margin: 0.5rem 2rem;
+                }
+
+                .link {
+                    font-size: textSize("tiny");
+                    font-weight: 200;
+                }
+            }
+        }
+        .dev-creds {
+            flex-flow: column nowrap;
+            margin: 1.5rem 3rem;
+            p {
+                padding: 1rem;
+                text-align: center;
+            }
         }
     }
 

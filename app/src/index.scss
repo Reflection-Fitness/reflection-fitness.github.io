@@ -2,9 +2,9 @@
 
 // constants and access functions
 $textSizes: (
-  "medium": 1.875vw, 
-  "small": 1.250vw,
-  "tiny": 0.938vw
+  "medium": 1.5rem, // 1.875vw, 36px, 2.25rem
+  "small": 1.25rem, // 1.250vw, 24px, 1.5rem
+  "tiny": 1rem // 0.938vw, 18px, 1.125rem
 );
 
 @function textSize($key){
@@ -12,7 +12,8 @@ $textSizes: (
 }
 
 $breakpoints: (
-  "phone": 568px,
+  "tablet": 768px,
+  "phone-L": 425px
 );
 
 @function breakpoint($key){
@@ -34,4 +35,9 @@ $colors: (
 
 @function color($key){
   @return map.get($colors, $key);
+}
+
+html {
+  font-size: 16px;
+  width: 100%;
 }
