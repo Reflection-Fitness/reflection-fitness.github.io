@@ -6,8 +6,6 @@
     flex-flow: column nowrap;
     align-items: center;
 
-    margin-top: 3rem;
-
     .main {
         min-height: 50vh;
 
@@ -26,14 +24,14 @@
             padding: 2rem 0;
     
             h1 {
-                font-size: textSize("medium");
+                font-size: textSize("M");
                 font-weight: 300;
                 padding: 1rem;
             }
 
             p {
                 width: 75%;
-                font-size: textSize("small");
+                font-size: textSize("S");
                 font-weight: 100;
             }
         }
@@ -47,7 +45,7 @@
             align-items: center;
             justify-content: space-between;
 
-            font-size: textSize("small");
+            font-size: textSize("S");
 
             * {
                 margin: 1rem 2rem;
@@ -59,7 +57,7 @@
 
             .link {
                 text-decoration: none;
-                font-size: textSize("small");
+                font-size: textSize("S");
                 font-weight: 200;
             }
         }
@@ -84,7 +82,7 @@
         justify-content: space-between;
 
         p {
-            font-size: textSize("tiny");
+            font-size: textSize("XS");
             font-weight: 100;
         }
     }
@@ -99,7 +97,7 @@
                 }
 
                 .link {
-                    font-size: textSize("tiny");
+                    font-size: textSize("XS");
                     font-weight: 200;
                 }
             }

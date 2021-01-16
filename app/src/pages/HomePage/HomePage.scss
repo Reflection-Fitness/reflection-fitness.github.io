@@ -27,7 +27,7 @@
 
         p {
             // margin-top: 48vh;
-            font-size: textSize("medium");
+            font-size: textSize("M");
             font-weight: 400;
         }
 
@@ -50,7 +50,7 @@
 
         .lead-in {
             align-self: flex-start;
-            font-size: textSize("medium");
+            font-size: textSize("M");
             font-weight: 300;
             margin: 3rem 0 0rem 3rem;
         }
@@ -80,7 +80,7 @@
 
                 p {
                     margin-top: auto;
-                    font-size: textSize("small");
+                    font-size: textSize("S");
                     font-weight: 300;
                 }
             }
@@ -95,7 +95,7 @@
 
             .txt {
                 text-align: center;
-                font-size: textSize("medium");
+                font-size: textSize("M");
                 font-weight: 300;
                 margin: 1rem 1rem 3rem 1rem;
             }
