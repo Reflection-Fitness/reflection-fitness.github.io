@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.68267076.chunk.css",
-    "main.js": "/static/js/main.29b801e6.chunk.js",
-    "main.js.map": "/static/js/main.29b801e6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f8f685a1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f8f685a1.js.map",
+    "main.css": "/static/css/main.412ec525.chunk.css",
+    "main.js": "/static/js/main.5281e9e5.chunk.js",
+    "main.js.map": "/static/js/main.5281e9e5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fbde013e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fbde013e.js.map",
     "static/js/2.008dd703.chunk.js": "/static/js/2.008dd703.chunk.js",
     "static/js/2.008dd703.chunk.js.map": "/static/js/2.008dd703.chunk.js.map",
-    "static/js/3.0f3e0477.chunk.js": "/static/js/3.0f3e0477.chunk.js",
-    "static/js/3.0f3e0477.chunk.js.map": "/static/js/3.0f3e0477.chunk.js.map",
+    "static/js/3.bb5e4259.chunk.js": "/static/js/3.bb5e4259.chunk.js",
+    "static/js/3.bb5e4259.chunk.js.map": "/static/js/3.bb5e4259.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.68267076.chunk.css.map": "/static/css/main.68267076.chunk.css.map",
+    "static/css/main.412ec525.chunk.css.map": "/static/css/main.412ec525.chunk.css.map",
     "static/js/2.008dd703.chunk.js.LICENSE.txt": "/static/js/2.008dd703.chunk.js.LICENSE.txt",
     "static/media/About.a611d992.png": "/static/media/About.a611d992.png",
     "static/media/FitnessBootcamps.2eb9a4f9.svg": "/static/media/FitnessBootcamps.2eb9a4f9.svg",
@@ -26,16 +26,19 @@
     "static/media/abort.14cdfe4b.svg": "/static/media/abort.14cdfe4b.svg",
     "static/media/arm-muscles.a9facd69.svg": "/static/media/arm-muscles.a9facd69.svg",
     "static/media/checkmark.dbb2d01c.svg": "/static/media/checkmark.dbb2d01c.svg",
+    "static/media/facebook.c28302f3.svg": "/static/media/facebook.c28302f3.svg",
     "static/media/fitness.1c7833bf.svg": "/static/media/fitness.1c7833bf.svg",
     "static/media/heart-care.ee764f59.svg": "/static/media/heart-care.ee764f59.svg",
     "static/media/logo.d658372f.svg": "/static/media/logo.d658372f.svg",
+    "static/media/mail.8b80b162.svg": "/static/media/mail.8b80b162.svg",
     "static/media/math-plus.80c531bc.svg": "/static/media/math-plus.80c531bc.svg",
+    "static/media/phone.b0dfd744.svg": "/static/media/phone.b0dfd744.svg",
     "static/media/slow.290a341c.svg": "/static/media/slow.290a341c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8f685a1.js",
+    "static/js/runtime-main.fbde013e.js",
     "static/js/2.008dd703.chunk.js",
-    "static/css/main.68267076.chunk.css",
-    "static/js/main.29b801e6.chunk.js"
+    "static/css/main.412ec525.chunk.css",
+    "static/js/main.5281e9e5.chunk.js"
   ]
 }
