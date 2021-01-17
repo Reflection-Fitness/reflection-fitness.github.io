@@ -2,7 +2,7 @@ import './AboutPage.scss';
 import { Navbar } from '../../components/Navbar/Navbar';
 import { Footer } from '../../components/Footer/Footer';
 import bg from '../../assets/backgrounds/About.png';
-import headshot from '../../assets/Headshot.svg';
+import headshot from '../../assets/graphics/Headshot.svg';
 
 import mountW from '../../assets/graphics/MountainsW.svg';
 import mountT from '../../assets/graphics/MountainsT.svg';

@@ -1,5 +1,5 @@
 import './ActionButton.scss';
-import arrow from '../../assets/GreenArrow.svg';
+import arrow from '../../assets/graphics/GreenArrow.svg';
 import { Link } from 'react-router-dom';
 
 export function ActionButton({txt="action-btn", link="/contact"}){
