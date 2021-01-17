@@ -1,1 +1,226 @@
 @import '../../index.scss';
+
+.contact.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .bg {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .hero {
+        margin-left: 4rem;
+
+        width: 25%;
+        h1 {
+            color: color("accent");
+            font-size: textSize("L");
+            font-weight: 400;
+        }
+
+        p {
+            padding: 1rem 0;
+        }
+
+        .socials {
+            display: inline-flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            
+            a {
+                margin: 0.5rem 1.5rem 0 0;
+                img {
+                    width: 2rem;
+                }
+            }
+        }
+    }
+
+    .card {
+        height: 25rem;
+        margin-right: 4rem;
+        background-color: color("dark-1");
+        
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        
+        .send-msg {
+            position: relative;
+            height: 100%;
+
+            padding: 2rem;
+            h1 {
+                position: absolute;
+                color: color("light-4");
+                font-size: textSize("S");
+                font-weight: 400;
+            }
+    
+            form {
+                height: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: center;
+                
+                .section {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    height: 16rem;
+
+                    .field {
+                        position: relative;
+                        overflow: hidden;
+                        height: 4rem;
+        
+                        &.multi {
+                            height: 100%;
+
+                            textarea {
+                                resize: none;
+                            }
+                        }
+                        
+                        .input {
+                            width: 100%;
+                            height: 100%;
+                            color: color("light-5");
+                            padding-top: 2rem;
+                            background-color: transparent;
+        
+                            border: none;
+                            outline: none;
+        
+                            font-size: textSize("S");
+                            font-weight: 300;
+                        }
+        
+                        label {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            pointer-events: none;
+                            border-bottom: 1px solid color("light-5");
+        
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                bottom: -1px;
+        
+                                height: 100%;
+                                width: 100%;
+                                border-bottom: 1px solid color("light-4");
+                                transform: translateX(-100%);
+                                transition: transform 0.3s ease;
+                            }
+        
+                            .content-name {
+                                position: absolute;
+                                top: 2rem;
+                                left: 0px;
+                                transition: all 0.3s ease;
+        
+                                font-size: textSize("S");
+                                font-weight: 200;
+                                color: color("light-5");
+                            }
+                        }
+        
+                        .input:focus, .input:valid {
+                            & + label {
+                                &::after {
+                                    transform: translateX(0%);
+                                }
+        
+                                .content-name {
+                                    transform: translateY(-150%);
+                                    color: color("light-4")
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .spacer {
+                    width: 4rem;
+                    height: 100%;
+                }
+                
+                .submit {
+                    position: absolute;
+                    bottom: 1rem;
+                    right: 2rem;
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+
+                    p {
+                        font-size: textSize("XS");
+                    }
+                    img {
+                        width: 12px;
+                    }
+                }
+            }
+
+            .status {
+                position: absolute;
+                left: 2rem;
+                bottom: 1.75rem;
+
+                color: color("accent");
+                font-size: textSize("XS");
+                font-weight: 400;
+            }
+        }
+        
+
+        .hours {
+            height: 100%;
+            background-color: color("dark-3");
+            padding: 2rem;
+
+            h1 {
+                margin: 0 0 1rem 0;
+                text-align: center;
+                color: color("light-4");
+                font-size: textSize("S");
+                font-weight: 400;
+            }
+
+            .hour {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    min-width: 5.5rem;
+                    margin: 1rem;
+                    text-align: center;
+                    color: color("light-5");
+                    font-size: textSize("XS");
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}
