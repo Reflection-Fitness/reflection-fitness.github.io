@@ -1,13 +1,8 @@
 import './Footer.scss';
-import {default as constants} from '../../constants';
-
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/logo.svg';
-import facebook from '../../assets/socials/facebook.svg';
-import instagram from '../../assets/socials/instagram.svg';
-import email from '../../assets/socials/mail.svg';
-import phone from '../../assets/socials/phone.svg';
+import { Socials } from '../Socials/Socials';
 
 function NavLink({ curr, name, link }) {
     return (
@@ -18,8 +13,6 @@ function NavLink({ curr, name, link }) {
 }
 
 export function Footer({ curr }) {
-    let contactLinks = constants["contactLinks"]
-
     return (
         <div className="footer container">
             <div className="main">
@@ -36,19 +29,7 @@ export function Footer({ curr }) {
                     <NavLink curr={curr} name="Contact" link="/contact"/>
                 </ul>
 
-                <div className="socials">
-                    <a href={contactLinks["facebook"]} target="_blank" rel="noreferrer">
-                        <img src={facebook} alt="facebook"/>
-                    </a>
-                    
-                    <a href={"mailto: " + contactLinks["email"]} target="_blank" rel="noreferrer">
-                        <img src={email} alt="email"/>
-                    </a>
-
-                    <a href={"tel: " + contactLinks["phone"]} target="_blank" rel="noreferrer">
-                        <img src={phone} alt="phone"/>
-                    </a>
-                </div>
+                <Socials/>
             </div>
             <hr />
             <div className="dev-creds">
