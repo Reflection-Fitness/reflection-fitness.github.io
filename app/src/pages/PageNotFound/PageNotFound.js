@@ -1,8 +1,14 @@
 import { Navbar } from '../../components/Navbar/Navbar';
-import './PageNotFound.scss'
+import {Footer} from '../../components/Footer/Footer';
+import './PageNotFound.scss';
+
 export function PageNotFound() {
     return (
-        <Navbar curr="PageNotFound"/>
+        <>
+            <Navbar curr="PageNotFound"/>
+            <Footer curr="PageNotFound"/>
+        </>
+        
     );
     
 }

@@ -1,6 +1,3 @@
-
-// stores constants
-
 const contactLinks = {
     "facebook": "https://www.facebook.com/Reflection-Fitness-LLC-345933576081644/",
     "email": "info@reflectionfitness.net",
@@ -8,6 +5,8 @@ const contactLinks = {
     "address": "22541 Lost Creek Ter Ashburn VA 20147"
 }
 
-export {
-    contactLinks
+let exports = {
+    contactLinks: contactLinks
 }
+
+export default exports
