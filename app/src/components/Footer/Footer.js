@@ -38,8 +38,8 @@ export function Footer({ curr }) {
                     ALL RIGHTS RESERVED.
                 </p>
                 <p>22541 Lost Creek Ter Ashburn VA 20147</p>
-                <p>PRIVACY POLICY</p>
-                <p>TERMS OF USE</p>
+                {/* <p>PRIVACY POLICY</p>
+                <p>TERMS OF USE</p> */}
             </div>
         </div>
     );
