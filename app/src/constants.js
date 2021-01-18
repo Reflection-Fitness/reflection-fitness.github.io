@@ -5,8 +5,16 @@ const contactLinks = {
     "address": "22541 Lost Creek Ter Ashburn VA 20147"
 }
 
+const devContactLinks = {
+    "email": "calebarulandu@gmail.com",
+    "github": "https://github.com/Claeb101",
+    "linkedin": "https://www.linkedin.com/in/alvan-caleb-arulandu/",
+    "website": "https://claeb101.github.io/website/"
+}
+
 let exports = {
-    contactLinks: contactLinks
+    contactLinks: contactLinks,
+    devContactLinks: devContactLinks
 }
 
 export default exports
