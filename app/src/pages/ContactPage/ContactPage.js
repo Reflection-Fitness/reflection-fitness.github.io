@@ -1,10 +1,12 @@
+import './ContactPage.scss';
+import { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
+
 import { Navbar } from '../../components/Navbar/Navbar';
 import { Footer } from '../../components/Footer/Footer';
 import { ActionButton } from '../../components/ActionButton/ActionButton';
-import './ContactPage.scss';
 import { Socials } from '../../components/Socials/Socials';
 import bg from '../../assets/backgrounds/Contact.png';
-import { useRef, useState } from 'react';
 
 function OpenHour({ day, time }) {
     return (
@@ -70,6 +72,25 @@ export function ContactPage() {
         } else if (formFields.message.length <= 0) {
             setStatus("Invalid Message");
         } else {
+            // send emails
+            emailjs.send(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                {
+                    full_name: formFields.name,
+                    email: formFields.email,
+                    phone: formFields.phone,
+                    message: formFields.message
+                },
+                process.env.REACT_APP_EMAILJS_USER_ID
+            )
+            .then((result) => {
+                console.log("Success")
+            }, (error) => {
+                console.log("Error")
+            })
+
+            // update UI / reset data
             setFormFields({
                 name: "",
                 email: "",
