@@ -9,7 +9,7 @@ const devContactLinks = {
     "email": "calebarulandu@gmail.com",
     "github": "https://github.com/Claeb101",
     "linkedin": "https://www.linkedin.com/in/alvan-caleb-arulandu/",
-    "website": "https://claeb101.github.io/website/"
+    "website": "https://arulandu.com"
 }
 
 let exports = {
